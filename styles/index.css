@@ -1,3 +1,7 @@
+*{
+  padding: 0;
+  margin: 0;
+}
 .logo{
   height: 200px;
   width: 150px;
@@ -9,4 +13,9 @@
 .social-media{
   height: 20px;
   width: 22px;
+}
+
+.logo{
+  width: 60px;
+  height: 60px;
 }
