@@ -1,6 +1,20 @@
 *{
   padding: 0;
   margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: black;
+
+}
+ul{
+  text-decoration: none;
+}
+
+body{
+  background-color: #e0e0e0;
+  overflow-y: scroll;
 }
 .logo{
   height: 200px;
@@ -11,9 +25,11 @@ body{
 }
 #header{
   background-color: rosybrown;
+
 }
 #footer{
   background-color: rosybrown;
+  /* position: fixed; */
 }
 .social-media{
   height: 20px;
@@ -28,7 +44,7 @@ body{
   height: 500px;
 }
 #content{
-  margin-top: 2%;
+  margin-top: 6%;
   margin-left: 4%;
   margin-right: 4%;
 }
@@ -51,4 +67,22 @@ body{
 }
 .lower-form-rating p{
   padding: 1%;
+}
+
+#header{
+  background-color: rosybrown;
+  /* position: relative; */
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.login{
+  margin-right: 15px;
+}
+.login a{
+  text-decoration: none;
+  color: black;
 }
