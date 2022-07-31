@@ -1,0 +1,13 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+#main{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 12px solid ;
+  margin-inline: auto;
+  margin-top: 20%;
+  border-color: #444444 #f3f3f3 #f3f3f3 #f3f3f3;
+}

@@ -14,37 +14,55 @@
       <a href="login.html" target="_blank">Login</a>
     </div>
     <div id="content">
-      <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radission-Blue" class="hotel"><br>
-      <form action="payment.html" method="get">
-        <label for="adult">Adult: </label>
-        <input type="number" name="adult" placeholder="Enter no.of persons" min="1" required ><br>
-        <label for="name">Name: </label>
-        <input type="text" name="name" placeholder="Enter your Name" required ><br>
-        <label for="from-date">From Date: </label>
-        <input type="date" name="from-date" required ><br>
-        <label for="to-date">To Date: </label>
-        <input type="date" name="to-date" required ><br>
-        <label for="total">Total: </label>
-        <input type="number" name="total" disabled ><br>
+      <div class="hotel-main">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radission-Blue" class="hotel"><br>
+      </div>
+      <div class="form">
+        <form action="payment.html" method="get">
+          <label for="adult">Adult: </label>
+          <input type="number" name="adult" placeholder="Enter no.of persons" min="1" required ><br>
+          <label for="name">Name: </label>
+          <input type="text" name="name" placeholder="Enter your Name" required ><br>
+          <label for="from-date">From Date: </label>
+          <input type="date" name="from-date" required ><br>
+          <label for="to-date">To Date: </label>
+          <input type="date" name="to-date" required ><br>
+          <label for="total">Total: </label>
+          <input type="number" name="total" disabled ><br>
+  
+           <button type="submit">Book Now</button>
+  
+        </form>
+      </div>
+     <div class="lower-form">
+      <div class="lower-form-header">
+        <h2>Radission Blue Hotel</h2>
+      </div>
+      <div class="lower-form-rating">
+        <p>Rating</p>
+        <p>5 Star</p>
 
-         <button type="submit">Book Now</button>
-
-      </form>
-      <h2>Radission Blue Hotel</h2>
-      <p>Rating</p>
-      <p>5 Star</p>
-
-      <P>AMENITIES</P>
-      <ul>
-      <li>Room Service</li>
-      <li>Restaurant</li>
-      <li>Business Center</li>
-      <li>Fitness Center </li>
-      <li>Pool</li>
-      </ul>
-
-      <h5>DESCRIPTION</h5>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repudiandae maxime eos ex earum temporibus totam sapiente mollitia, nulla atque quisquam in accusantium sequi rem! Veritatis dolorem accusamus quidem voluptatum.</p>
+        <p>AMENITIES</p>
+      </div>
+      
+      <div class="lower-form-details">
+        <ul>
+          <li>Room Service</li>
+          <li>Restaurant</li>
+          <li>Business Center</li>
+          <li>Fitness Center </li>
+          <li>Pool</li>
+          </ul>
+      </div>
+      
+      <div>
+        <h5>DESCRIPTION</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repudiandae maxime eos ex earum temporibus totam sapiente mollitia, nulla atque quisquam in accusantium sequi rem! Veritatis dolorem accusamus quidem voluptatum.</p>
+      </div>
+      
+     </div>
+      
+      
     </div>
     <div id="footer">
       <a href="contact.html">Contact Us</a> <br>
