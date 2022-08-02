@@ -3,9 +3,15 @@
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
 }
+
 a{
   text-decoration: none;
   color: black;
+}
+#main{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .logo{
   height: 200px;
@@ -78,12 +84,17 @@ body{
 
 #footer{
   background-color: rosybrown;
-  /* position: fixed; */
-  /* width: 100vw; */
+  position: fixed;
+  width: 100vw;
   padding: 15px;
   display: flex;
-  flex-direction: column; 
+  /* flex-direction: column;  */
   height: auto;
+  bottom: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
 }
 
 .footer-inner{
@@ -91,7 +102,9 @@ body{
     /* flex-direction: row; */
     flex-direction:row;
     margin: 0 15px 0 15px;
-    
+    width: 100%;
+    align-items: center;
+    /* justify-content: space-around; */
 }
 
 #city{
@@ -106,15 +119,24 @@ body{
 
 .view-more{
   text-align: center;
-  margin-bottom: 1%;
+  margin-bottom: 5%;
 }
+
 .copy-rt{
   text-align: center;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
 }
 .contact{
   width: 100%;
+  /* display: flex; */
 }
 .social{
   width: 100%;
-  margin-left:85%;
+  /* display: flex; */
+  text-align: right;
+  margin-right: inherit;
+
 }
