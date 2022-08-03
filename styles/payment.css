@@ -23,34 +23,8 @@ body{
   width: 60px;
   height: 60px;
 }
-.hotel{
-  height: 500px;
-  width: 500px;
-}
-.inner-content{
-  background-color: rgb(132,136,139);
-  width: 50%;
-  height: 20%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-left: 21%;
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
-}
-.details{
-  margin-left: 2%;
-}
-.box{
-  margin: 2%;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-left: 2%;
-  padding-right: 2%;
-}
+
+
 
 #header{
   background-color: rosybrown;
@@ -70,8 +44,55 @@ body{
   color: black;
 }
 #content{
-  margin-top: 6%;
+  margin-top: 9%;
   /* margin-left: 4%; */
   /* margin-right: 4%; */
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  margin-bottom: 9%;
 }
 
+.inner-content{
+  margin: 2%;
+  width: 42.5%;
+  background-color: gray;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.inner-content-img{
+  max-height: 300px;
+  max-width: 270px;
+}
+.hotel{
+  max-height: 300px;
+  max-width: 270px;
+}
+  .details {
+    margin: 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1% 2%;
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rosybrown;
+}
+  .social{
+    margin-right: 3%;
+  }
+.inner-content-details{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  margin-left: 3%;
+  padding: 3%;
+}
+
+.box , b{
+  font-family: cursive;
+}

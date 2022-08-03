@@ -57,19 +57,7 @@ body{
   justify-content: center;
 }
 
-.city-cards{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
-.city-cards .state-img ,a{
-  width: 150px;
-  height: 150px;
-  padding: 4%;
-  border-radius: 25%;
-}
+
 .login{
   margin-right: 15px;
 }
@@ -108,7 +96,7 @@ body{
 }
 
 #city{
-  /* outline: none; */
+  outline: none;
   border: 1px solid transparent;
   background-color: #f1f1f1;
   padding: 10px;
@@ -120,6 +108,7 @@ body{
 .view-more{
   text-align: center;
   margin-bottom: 5%;
+  margin-top: 1%;
 }
 
 .copy-rt{
@@ -139,4 +128,52 @@ body{
   text-align: right;
   margin-right: inherit;
 
+}
+.city-cards{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5%;
+  
+}
+
+.inner-city-card-img{
+  width: 150px;
+  height: 150px;
+  /* padding: 4%; */
+  border-radius: 25%;
+
+}
+
+.city-cards .state-img ,a{
+  width: 150px;
+  height: 150px;
+  /* padding: 4%; */
+  border-radius: 25%;
+}
+.inner-city-cards .state-img{
+  box-shadow: 10px 10px 10px grey;
+}
+.inner-city-cards{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner-city-card-img{
+  position: relative;
+}
+.city-name{
+  position: absolute;
+  display: none;
+  color:  #f1f1f1;
+}
+
+.inner-city-cards .state-img:hover{
+  opacity: .8;  
+  background-color: rgba(0, 0, 0, 0.721);
+}
+.inner-city-cards:hover .city-name{
+  display: block;
 }

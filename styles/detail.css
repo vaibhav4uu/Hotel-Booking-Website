@@ -1,3 +1,4 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap'); */
 *{
   padding: 0;
   margin: 0;
@@ -39,10 +40,7 @@ body{
   width: 60px;
   height: 60px;
 }
-.hotel{
-  width: 500px;
-  height: 500px;
-}
+
 #content{
   margin-top: 6%;
   margin-left: 4%;
@@ -78,6 +76,7 @@ body{
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 1000;
 }
 .login{
   margin-right: 15px;
@@ -89,4 +88,85 @@ body{
 
 .description{
   margin-bottom: 5%;
+}
+
+.hotel-content-form{
+  display: flex;
+  width: 100%;
+  max-height: 400px;
+  /* background-color: aqua; */
+  /* border: 2px solid black; */
+
+}
+
+.hotel-main{
+  display: flex;
+    width: 70%;
+    /* background-color: bisque; */
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 1% 0 1% 0;
+  
+}
+.hotel{
+  width: 500px;
+  max-height: 350px;
+}
+
+.form{
+  border: solid black;
+  border-width: 1px 1px 1px 0px;
+  height: auto;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 1% 2% 1.5% 2%;
+  align-items: baseline;
+    justify-content: space-evenly;
+}
+.inner-form-sec{
+  display: flex;
+  align-items: center;
+}
+.label , label{
+  /* padding: 0 12px 12px 0; */
+  display: inline-block;
+  text-align: right;
+}
+
+.input-type{
+  /* margin-left: 60px; */
+  position: absolute;
+  right: 7%;
+}
+
+
+
+input{
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  float: left;
+  font-size: 12px;
+}
+
+.btn input{
+  width: 150px;
+  padding: 9px;
+  border: 2px solid green;
+  color: green;
+  position: absolute;
+  right: 15%;
+}
+
+.btn , input{
+  cursor: pointer;
+}
+
+
+.lower-form-header , h2{
+  font-family: cursive;
 }
