@@ -11,3 +11,19 @@
   margin-top: 20%;
   border-color: #444444 #f3f3f3 #f3f3f3 #f3f3f3;
 }
+@keyframes colorChange{
+ 0% {border-color: #444444 #f3f3f3 #f3f3f3 #f3f3f3;}
+ 25% {border-color:  #f3f3f3 #444444 #f3f3f3 #f3f3f3;}
+ 50% {border-color: #f3f3f3 #f3f3f3 #444444 #f3f3f3;}
+ 75% {border-color: #f3f3f3 #f3f3f3 #f3f3f3 #444444;}
+ /* 100% {border-color: #444444 #f3f3f3 #f3f3f3 #f3f3f3;} */
+}
+
+div{
+  animation-name: colorChange;
+  animation-iteration-count: infinite;
+  animation-duration: 0.7s;
+  animation-direction: normal;
+  animation-delay: ;
+
+}

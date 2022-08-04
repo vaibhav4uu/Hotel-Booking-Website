@@ -9,8 +9,7 @@ a{
 
 }
 a:hover{
-  text-decoration: none;
-  color: black;
+  text-decoration-line: none;
 }
 ul{
   text-decoration: none;
@@ -99,8 +98,13 @@ body{
   font-weight: bold;
 }
 
-#map-view{
-  display: none;
+#map-view-main{
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+}
+.map-view{
+  display: flex;
 }
 
 .main-card-class{
@@ -116,35 +120,7 @@ body{
   justify-content: space-evenly;
 }
 
-.card{
-  margin: 2%;
-  width: 40%;
-  background-color: lightgrey;
-  display: flex;
-  flex-direction: row;
-}
-.card-details{
-  display: flex;
-  flex-direction: column;
-  margin: 4%;
-}
-.card-details , a{
-  text-decoration: none;
-}
-.card:hover{
-  background-color: rosybrown;
-}
-/* .card-details , div{
-  padding: 2%;
-} */
+
 .inner-card-details{
   margin: 0 0 10px 0;
-}
-.main-card-2 {
-  display: flex;
-  /* flex-direction: column; */
-  /* width:100%; */
-  /* justify-content: start; */
-  margin-left: 57px;
-  margin-bottom: 5%;
 }

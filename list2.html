@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index</title>
+    <title>List|Map</title>
 
     <!--You need to include the below lines of code to create a modal using bootstrap -->
     <link
@@ -28,14 +28,13 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <!--Bootstrap ends-->
-    <link rel="stylesheet" href="./styles/index.css" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
+    <!--bootstrap ends-->
+
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="list1.css" />
   </head>
+
   <body>
     <div id="main">
       <div id="header">
@@ -43,6 +42,7 @@
           <img src="./assests/images/logo.png" alt="logo" class="logo" />
         </div>
         <div class="login">
+          <!-- <a href="login.html">Login</a> -->
           <button
             type="button"
             class="btn btn-light"
@@ -94,79 +94,43 @@
                         placeholder="Enter Password"
                       />
                     </div>
+                    <button type="login" class="btn btn-primary">Login</button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
                   </form>
                 </div>
-                <div class="modal-footer">
-                  <button type="login" class="btn btn-primary">Login</button>
-                </div>
+                <div class="modal-footer"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Main content -->
-
       <div id="content">
-        <div id="city-div">
-          <input type="text" name="city" id="city" placeholder="City" /><br />
-        </div>
-        <div class="city-cards">
-          <div class="inner-city-cards">
-            <div class="inner-city-card-img">
-              <a href="list.html" target="_blank"
-                ><img
-                  src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
-                  alt="New Delhi"
-                  class="state-img"
-              /></a>
-            </div>
-            <div class="city-name">Delhi</div>
+        <div class="card1">
+          <div class="inner-card1">
+            <ul>
+              <li><a href="list.html">List View</a></li>
+            </ul>
           </div>
-
-          <div class="inner-city-cards">
-            <div class="inner-city-card-img">
-              <img
-                src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"
-                alt="Goa"
-                class="state-img"
-              />
-            </div>
-
-            <div class="city-name">Goa</div>
-          </div>
-
-          <div class="inner-city-cards">
-            <div>
-              <img
-                src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"
-                alt="Hyderabad"
-                class="state-img"
-              />
-            </div>
-
-            <div class="city-name">Hydrabad</div>
-          </div>
-          <div class="inner-city-cards">
-            <div>
-              <img
-                src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
-                alt="kolkata"
-                class="state-img"
-              />
-            </div>
-
-            <div class="city-name">Kolkata</div>
+          <div class="inner-card2">
+            <ul>
+              <li><a href="list2.html">Map View</a></li>
+            </ul>
           </div>
         </div>
 
-        <br />
-        <div class="view-more">
-          <a href="index.html">
-            <button type="button" class="btn btn-secondary">
-              View More
-            </button></a
-          >
+        <div id="map-view-main">
+          <img
+            src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"
+            alt="map-view"
+            class="map-view"
+          />
         </div>
       </div>
       <div id="footer">
