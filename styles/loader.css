@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
 }
-#main{
+/* #main{
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -10,20 +10,46 @@
   margin-inline: auto;
   margin-top: 20%;
   border-color: #444444 #f3f3f3 #f3f3f3 #f3f3f3;
+} */
+#main{
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+/* background: #dddddd; */
 }
-@keyframes colorChange{
- 0% {border-color: #444444 #f3f3f3 #f3f3f3 #f3f3f3;}
- 25% {border-color:  #f3f3f3 #444444 #f3f3f3 #f3f3f3;}
- 50% {border-color: #f3f3f3 #f3f3f3 #444444 #f3f3f3;}
- 75% {border-color: #f3f3f3 #f3f3f3 #f3f3f3 #444444;}
- /* 100% {border-color: #444444 #f3f3f3 #f3f3f3 #f3f3f3;} */
+#main::after{
+  content: "";
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 12px solid #f3f3f3 ;
+  border-top-color: #444444;
+  animation: loading 1s ease infinite;
 }
 
+@keyframes loading{
+  form{ transform: rotate(0turn)}
+  to{ transform: rotate(1turn)}
+}
+
+/* @keyframes colorChange{
+ 0% {border-color: #444444 #f3f3f3 #f3f3f3 #f3f3f3;}
+ 33% {border-color:  #f3f3f3 #444444 #f3f3f3 #f3f3f3;}
+ 66% {border-color: #f3f3f3 #f3f3f3 #444444 #f3f3f3;}
+ 99% {border-color: #f3f3f3 #f3f3f3 #f3f3f3 #444444;}
+
+} */
+/* 
 div{
   animation-name: colorChange;
   animation-iteration-count: infinite;
-  animation-duration: 0.7s;
+  animation-duration: 1s;
   animation-direction: normal;
-  animation-delay: ;
-
-}
+  animation-delay: ; 
+  animation-timing-function: ease-in-out;
+} */

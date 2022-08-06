@@ -1,121 +1,117 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap'); */
-*{
+* {
   padding: 0;
   margin: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
-a{
+a {
   text-decoration: none;
   color: black;
-
 }
-ul{
+ul {
   text-decoration: none;
 }
 
-body{
+body {
   background-color: #e0e0e0;
   overflow-y: scroll;
 }
-.logo{
+.logo {
   height: 200px;
   width: 150px;
 }
-body{
+body {
   background-color: #e0e0e0;
 }
-#header{
+#header {
   background-color: rosybrown;
-
 }
-#footer{
+#footer {
   background-color: rosybrown;
   /* position: fixed; */
   z-index: 200000;
 }
-.social-media{
+.social-media {
   height: 20px;
   width: 22px;
 }
-.logo{
+.logo {
   width: 60px;
   height: 60px;
 }
 
-#content{
+#content {
   margin-top: 6%;
   margin-left: 4%;
   margin-right: 4%;
 }
-.lower-form{
+.lower-form {
   margin-top: 1%;
   margin-bottom: 2%;
 }
-.lower-form-header{
+.lower-form-header {
   margin-top: 1%;
   margin-bottom: 1%;
 }
-.lower-form-rating{
+.lower-form-rating {
   margin-top: 1%;
   margin-bottom: 1%;
 }
-.lower-form-details{
+.lower-form-details {
   margin-top: 1%;
   margin-bottom: 1%;
   margin-left: 5%;
 }
-.lower-form-rating p{
+.lower-form-rating p {
   padding: 1%;
 }
 
-#header{
+#header {
   background-color: rosybrown;
   /* position: relative; */
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 20000;
 }
-.login{
+.login {
   margin-right: 15px;
 }
-.login a{
+.login a {
   text-decoration: none;
   color: black;
 }
 
-.description{
+.description {
   margin-bottom: 5%;
 }
 
-.hotel-content-form{
+.hotel-content-form {
   display: flex;
   width: 100%;
   max-height: 400px;
   /* background-color: aqua; */
   /* border: 2px solid black; */
-
 }
 
-.hotel-main{
+.hotel-main {
   display: flex;
-    width: 70%;
-    /* background-color: bisque; */
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    padding: 1% 0 1% 0;
-  
+  width: 70%;
+  /* background-color: bisque; */
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 1% 0 1% 0;
 }
-.hotel{
+.hotel {
   width: 500px;
   max-height: 350px;
 }
 
-.form{
+.form {
   border: solid black;
   border-width: 1px 1px 1px 0px;
   height: auto;
@@ -124,27 +120,27 @@ body{
   flex-direction: column;
   padding: 1% 2% 1.5% 2%;
   align-items: baseline;
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
-.inner-form-sec{
+.inner-form-sec {
   display: flex;
   align-items: center;
 }
-.label , label{
+.label,
+label {
   /* padding: 0 12px 12px 0; */
   display: inline-block;
   text-align: right;
 }
 
-.input-type{
+.input-type {
   /* margin-left: 60px; */
   position: absolute;
   right: 7%;
 }
 
-
-
-input{
+.input-type,
+input {
   width: 250px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -154,7 +150,7 @@ input{
   font-size: 12px;
 }
 
-.btn1 input{
+.btn1 input {
   width: 150px;
   padding: 9px;
   border: 2px solid green;
@@ -164,16 +160,438 @@ input{
   font-weight: 500;
 }
 
-.inner-btn1:hover{
+.inner-btn1:hover {
   cursor: pointer;
-  
 }
 
-.inner-btn1:hover{
+.inner-btn1:hover {
   color: white;
   background-color: green;
 }
 
-.lower-form-header , h2{
+.lower-form-header,
+h2 {
   font-family: cursive;
+}
+
+.checked {
+  color: orange;
+}
+
+.lower-form-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.carousel-control-next {
+  margin-right: -160px;
+  margin-top: 92px;
+}
+.carousel-control-prev {
+  margin-left: -160px;
+  margin-top: 92px;
+}
+
+/* Responsive using media query */
+@media screen and (max-width: 1456px) {
+  .input-type,
+  input {
+    width: 230px;
+  }
+  .input-type {
+    /* margin-left: 60px; */
+    position: absolute;
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 1456px) {
+  .input-type,
+  input {
+    width: 200px;
+  }
+  .input-type {
+    /* margin-left: 60px; */
+    position: absolute;
+    right: 5%;
+  }
+  .carousel-control-next {
+    margin-right: -90px;
+    margin-top: 92px;
+  }
+  .carousel-control-prev {
+    margin-left: -90px;
+    margin-top: 92px;
+  }
+}
+
+@media screen and (max-width: 1233px) {
+  .input-type {
+    /* margin-left: 60px; */
+    position: absolute;
+    right: 5%;
+  }
+  .carousel-control-next {
+    margin-right: -63px;
+    margin-top: 92px;
+  }
+  .carousel-control-prev {
+    margin-left: -63px;
+    margin-top: 92px;
+  }
+  .input-type,
+  input {
+    width: 195px;
+  }
+  .form {
+    width: 40%;
+  }
+
+  #content {
+    margin-top: 11%;
+  }
+}
+@media screen and (max-width: 1153px) {
+  .input-type,
+  input {
+    width: 180px;
+  }
+  .input-type {
+    /* margin-left: 60px; */
+    position: absolute;
+    right: 5%;
+  }
+  .carousel-control-next {
+    margin-right: -90px;
+    margin-top: 92px;
+  }
+  .carousel-control-prev {
+    margin-left: -90px;
+    margin-top: 92px;
+  }
+}
+
+@media screen and (max-width: 1093px) {
+  input {
+    width: 180px;
+  }
+  .input-type {
+    /* margin-left: 60px; */
+    position: absolute;
+    right: 5%;
+  }
+  .carousel-control-next {
+    margin-right: -63px;
+    margin-top: 92px;
+  }
+  .carousel-control-prev {
+    margin-left: -63px;
+    margin-top: 92px;
+  }
+  .input-type,
+  input {
+    width: 195px;
+  }
+  .form {
+    width: 40%;
+    padding: 1% 2% 3.5% 2%;
+  }
+
+  #content {
+    margin-top: 11%;
+  }
+}
+
+@media screen and (max-width: 1005px) {
+  .form {
+    width: 40%;
+    padding: 1% 2% 3.5% 2%;
+  }
+  .lower-form {
+    margin-top: 38%;
+    margin-bottom: 2%;
+  }
+  .hotel-content-form {
+    flex-direction: column;
+  }
+  .form {
+    width: 90%;
+    padding: 2% 3% 9.5% 3%;
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    border: 1px solid;
+  }
+  .hotel-main {
+    display: flex;
+    width: 90%;
+  }
+  .hotel-content-form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .label,
+  label {
+    /* padding: 0 12px 12px 0; */
+    display: inline-block;
+    text-align: right;
+    font-size: 25px;
+  }
+  .input-type,
+  input {
+    width: 521px;
+    font-size: 15px;
+    /* margin-bottom: 3%; */
+    padding: 4px;
+  }
+  .btn1 input {
+    right: 39%;
+
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .lower-form {
+    margin-top: 46%;
+    margin-bottom: 20%;
+  }
+  .input-type,
+  input {
+    width: 466px;
+    font-size: 15px;
+    /* margin-bottom: 3%; */
+    padding: 4px;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .lower-form {
+    margin-top: 46%;
+    margin-bottom: 20%;
+  }
+  .input-type,
+  input {
+    width: 420px;
+    font-size: 15px;
+    /* margin-bottom: 3%; */
+    padding: 4px;
+  }
+  .btn1 input {
+    margin-top: 13px;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .lower-form {
+    margin-top: 49%;
+    margin-bottom: 23%;
+  }
+  .input-type,
+  input {
+    width: 380px;
+    font-size: 15px;
+    /* margin-bottom: 3%; */
+    padding: 4px;
+  }
+  .btn1 input {
+    margin-top: 13px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .lower-form {
+    margin-top: 53%;
+    margin-bottom: 25%;
+  }
+  .input-type,
+  input {
+    width: 350px;
+    font-size: 15px;
+    /* margin-bottom: 3%; */
+    padding: 4px;
+  }
+  .btn1 input {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .lower-form {
+    margin-top: 53%;
+    margin-bottom: 25%;
+  }
+  .input-type,
+  input {
+    width: 310px;
+    font-size: 15px;
+    /* margin-bottom: 3%; */
+    padding: 4px;
+  }
+  .btn1 input {
+    margin-top: 10px;
+  }
+  .btn1 input {
+    width: 150px;
+    padding: 4px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .lower-form {
+    margin-top: 55%;
+    margin-bottom: 27%;
+  }
+  .input-type,
+  input {
+    width: 310px;
+    font-size: 13px;
+    /* margin-bottom: 3%; */
+    padding: 4px;
+  }
+  .btn1 input {
+    margin-top: 9px;
+  }
+  .btn1 input {
+    width: 110px;
+    padding: 4px;
+  }
+  .hotel {
+    width: 480px;
+    max-height: 350px;
+  }
+  #footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .input-type,
+  input {
+    width: 270px;
+    font-size: 13px;
+    /* margin-bottom: 3%; */
+    padding: 3px;
+  }
+  .btn1 input {
+    margin-top: 8px;
+  }
+  .btn1 input {
+    width: 110px;
+    padding: 4px;
+  }
+
+  #content {
+    margin-top: 19%;
+  }
+  .hotel {
+    width: 410px;
+    max-height: 350px;
+    position: revert;
+  }
+  .lower-form {
+    margin-top: 59%;
+    margin-bottom: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    margin-left: 26px;
+  }
+}
+
+@media screen and (max-width: 516px) {
+  .input-type,
+  input {
+    width: 220px;
+    font-size: 12px;
+    /* margin-bottom: 3%; */
+    padding: 3px;
+  }
+  .btn1 input {
+    margin-top: 6px;
+  }
+  .btn1 input {
+    width: 110px;
+    padding: 3px;
+  }
+
+  #content {
+    margin-top: 19%;
+  }
+  .hotel {
+    width: 410px;
+    max-height: 350px;
+    position: revert;
+  }
+  .lower-form {
+    margin-top: 59%;
+    margin-bottom: 30%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .input-type,
+  input {
+    width: 180px;
+    font-size: 12px;
+    /* margin-bottom: 3%; */
+    padding: 3px;
+  }
+  .btn1 input {
+    margin-top: 6px;
+  }
+  .btn1 input {
+    width: 100px;
+    padding: 3px;
+  }
+
+  #content {
+    margin-top: 19%;
+  }
+  .hotel {
+    width: 410px;
+    max-height: 350px;
+    position: revert;
+  }
+  .lower-form {
+    margin-top: 75%;
+    margin-bottom: 30%;
+    margin-left: 26px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .input-type,
+  input {
+    width: 120px;
+    font-size: 12px;
+    /* margin-bottom: 3%; */
+    padding: 4px;
+  }
+  .btn1 input {
+    margin-top: 5px;
+  }
+  .btn1 input {
+    width: 100px;
+    padding: 3px;
+  }
+
+  #content {
+    margin-top: 19%;
+  }
+  .hotel {
+    width: 410px;
+    max-height: 350px;
+    position: revert;
+  }
+  .lower-form {
+    margin-top: 75%;
+    margin-bottom: 30%;
+    margin-left: 26px;
+  }
 }

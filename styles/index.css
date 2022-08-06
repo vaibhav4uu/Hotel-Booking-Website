@@ -177,3 +177,64 @@ body{
 .inner-city-cards:hover .city-name{
   display: block;
 }
+
+
+
+/* Responsive using media query */
+@media screen and (max-width:650px) {
+  .city-cards {
+    flex-direction: column;
+}
+.inner-city-cards {
+
+  margin-bottom: 35px;
+}
+.view-more {
+  text-align: center;
+  margin-bottom: 20%;
+  margin-top: 1%;
+}
+#city {
+  width: 320px;
+}
+}
+
+@media screen and (max-width:540px) {
+
+#city {
+  width: 290px;
+}
+}
+
+@media screen and (max-width:450px) {
+
+  #city {
+    width: 250px;
+  }
+  .view-more {
+    text-align: center;
+    margin-bottom: 25%;
+    margin-top: 1%;
+  }
+  .footer-inner {
+    margin: 0 0px 0 0px;
+}
+  }
+
+  @media screen and (max-width:410px) {
+
+    #city {
+      width: 220px;
+    }
+    .view-more {
+      text-align: center;
+      margin-bottom: 25%;
+      margin-top: 1%;
+    }
+    .footer-inner {
+      margin: 0 0px 0 0px;
+  }
+  #footer {
+    padding: 13px 4px 13px 4px;
+}
+    }

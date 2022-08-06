@@ -36,6 +36,7 @@ body{
 }
 #footer{
   background-color: rosybrown;
+ 
 }
 .logo{
   height: 200px;
@@ -116,7 +117,7 @@ body{
   justify-content: space-evenly;
 }
 
-.card{
+.main-card-1 .card{
   margin: 2%;
   width: 40%;
   background-color: lightgrey;
@@ -142,9 +143,209 @@ body{
 }
 .main-card-2 {
   display: flex;
-  /* flex-direction: column; */
-  /* width:100%; */
-  /* justify-content: start; */
-  margin-left: 57px;
+  /* margin-left: 57px; */
   margin-bottom: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-card-2 .card{
+  margin: 2%;
+  width: 40%;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+}
+.checked {
+  color: orange;
+}
+
+
+/* Responsive using media query */
+@media screen and (max-width:1100px) {
+  .main-card-1 {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card-1 .card {
+  margin: 2%;
+  width: 70%;
+}
+.main-card-2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+.main-card-2 .card {
+  margin: 2%;
+  width: 70%;
+}
+.card1 {
+  margin-top: 10%;
+}
+}
+
+@media screen and (max-width:730px) {
+ 
+  .main-card-1 .card {
+    width: 90%;
+   
+  }
+  .main-card-2 .card {
+  width: 90%;
+ 
+}
+.main-card-2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+.card1 {
+  margin-top: 15%;
+}
+}
+
+@media screen and (max-width:600px) {
+
+  .card1 {
+    margin-top: 17%;
+  }
+  .main-card-2 .card{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-card-1 .card{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hotel {
+    width: 461px;
+    height: 250px;
+}
+
+#footer{
+  background-color: rosybrown;
+  width: 100%;
+}
+.main-card-2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15%;
+  justify-content: center;
+  position: relative;
+  /* width: fit-content; */
+}
+.copy-rt {
+  font-size: 15px;
+}
+  }
+
+
+  @media screen and (max-width:540px) {
+
+    .card1 {
+      margin-top: 17%;
+    }
+    .main-card-1 .card{
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: center;
+      width: auto;
+    }
+    .main-card-2 .card{
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: center;
+      width: auto;
+    }
+    .hotel {
+      width: 461px;
+      height: 250px;
+  }
+  #footer{
+    background-color: rosybrown;
+    width: 100%;
+  }
+  h3 {
+    font-size: 35px;
+}
+
+.inner-card-details , span {
+  font-size: 27px;
+}
+.inner-card-details , a {
+  font-size: 25px;
+}
+.inner-card-details , p {
+  font-size: 25px;
+}
+.copy-rt {
+  font-size: 15px;
+}
+    }
+
+
+    @media screen and (max-width:500px) {
+      .main-card-1 .card {
+        width: 409px;
+    }
+    .hotel {
+      width: 400px;
+      height: 250px;
+  }
+  .copy-rt {
+    font-size: 15px;
+}
+.main-card-2 {
+ 
+  margin-bottom: 25%;
+
+}
+    }
+
+
+    @media screen and (max-width:445px) {
+      h3 {
+        font-size: 30px;
+    }
+    .main-card-1 .card {
+      width: 365px;
+  }
+  .hotel {
+    width: 360px;
+    height: 250px;
+}
+.inner-card1 , li{
+font-size: 20px;
+}
+.inner-card2 , a{
+  font-size: 20px;
+  }
+}
+    
+@media screen and (max-width:389px) {
+  h3 {
+    font-size: 30px;
+}
+.main-card-1 .card {
+  width: 305px;
+}
+.hotel {
+width: 300px;
+height: 250px;
+}
+.inner-card1 , li{
+font-size: 20px;
+}
+.inner-card2 , a{
+font-size: 20px;
+}
 }
